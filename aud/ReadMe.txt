@@ -1,2 +1,2 @@
-<b>Includes</b>:
+Includes:
 - Task 4
