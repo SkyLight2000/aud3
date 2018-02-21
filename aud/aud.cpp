@@ -2,21 +2,20 @@
 //
 
 #include "stdafx.h"
-#include <iostream>
 #include <Windows.h>
-using namespace std;
+#define ARR_SIZE 5
 
 int main()
 {
 	SetConsoleOutputCP(1251);
-	int arr[5];
+	int arr[ARR_SIZE];
 	printf("Введите числа: ");
-	for (int i = 0; i < 5; i++) {
-		cin >> arr[i];
+	for (int i = 0; i < ARR_SIZE; i++) {
+		scanf_s("%d", &arr[i]);
 	}
 	int MAX = arr[0];
-	int MIN = arr[1];
-	for (int i = 0; i < 5; i++) {
+	int MIN = arr[0];
+	for (int i = 1; i < ARR_SIZE; i++) {
 		if (MAX < arr[i]) {
 			MAX = arr[i];
 		}
